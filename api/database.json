@@ -70,5 +70,18 @@
       "price": 1241
     }
   ],
-  "orders": []
+  "orders": [
+    {
+      "metalId": 1,
+      "styleId": 1,
+      "sizeId": 1,
+      "id": 1
+    },
+    {
+      "metalId": 3,
+      "styleId": 3,
+      "sizeId": 5,
+      "id": 2
+    }
+  ]
 }
