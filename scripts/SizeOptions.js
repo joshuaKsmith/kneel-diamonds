@@ -12,15 +12,6 @@ export const SizeOptions = async () => {
 
     document.addEventListener("change", handleSizeChoice)
 
-    let sizesHTML = "<h2>Sizes</h2>"
-    const sizeStringArray = sizes.map(
-        (size) => {
-            return `<div>
-                <input type='radio' name='size' value='${size.id}' /> ${size.carets}
-            </div>`
-        }
-    )
-    sizesHTML += sizeStringArray.join("")
-
-    return sizesHTML
+    return sizes.map((size) => {
+        return `<div><input type='radio' name='size' value='${size.id}' /> ${size.carets}</div>`}).join("")
 }

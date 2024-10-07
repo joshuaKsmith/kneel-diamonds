@@ -12,15 +12,6 @@ export const MetalOptions = async () => {
 
     document.addEventListener("change", handleMetalChoice)
 
-    let metalsHTML = "<h2>Metals</h2>"
-    const metalStringArray = metals.map(
-        (metal) => {
-            return `<div>
-                <input type='radio' name='metal' value='${metal.id}' /> ${metal.metal}
-            </div>`
-        }
-    )
-    metalsHTML += metalStringArray.join("")
-
-    return metalsHTML
+    return metals.map((metal) => {
+        return `<div><input type='radio' name='metal' value='${metal.id}' /> ${metal.metal}</div>`}).join("")
 }
