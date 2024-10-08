@@ -6,12 +6,20 @@ import { OrdersList } from './Order.js'
 
 const container = document.querySelector('#container')
 
-/*export*/ const render = async () => {
-    const metalOptionsHTML = await MetalOptions()
-    const styleOptionsHTML = await StyleOptions()
-    const sizeOptionsHTML = await SizeOptions()
+const render = async () => {
+    // const metalOptionsHTML = await MetalOptions()
+    // const styleOptionsHTML = await StyleOptions()
+    // const sizeOptionsHTML = await SizeOptions()
+    // const ordersListHTML = await OrdersList()
+
+    const [metalOptionsHTML, styleOptionsHTML, sizeOptionsHTML, ordersListHTML] = await Promise.all([
+        MetalOptions(),
+        StyleOptions(),
+        SizeOptions(),
+        OrdersList(),
+    ])
+
     const buttonHTML = saveOrder()
-    const ordersListHTML = await OrdersList()
 
     container.innerHTML = `
         <h1>Kneel Diamonds</h1>
