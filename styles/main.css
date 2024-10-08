@@ -1,0 +1,20 @@
+.choices {
+    display:flex;
+
+}
+
+.options { 
+    border: 1px dotted blueviolet;
+    margin: 10px;
+    width: 33%;
+}
+
+.variety {
+    display:flex;
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+
+#saveOrder {
+    margin-left: 20px;
+}

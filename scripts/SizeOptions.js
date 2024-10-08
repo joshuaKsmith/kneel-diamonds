@@ -13,5 +13,6 @@ export const SizeOptions = async () => {
     document.addEventListener("change", handleSizeChoice)
 
     return sizes.map((size) => {
-        return `<div><input type='radio' name='size' value='${size.id}' /> ${size.carets}</div>`}).join("")
+        return `<div><input type='radio' name='size' value='${size.id}' /> ${size.carets}</div>`
+    }).join("")
 }

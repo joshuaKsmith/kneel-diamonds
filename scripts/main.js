@@ -3,6 +3,7 @@ import { StyleOptions } from './StyleOptions.js'
 import { SizeOptions } from './SizeOptions.js'
 import { saveOrder } from './PlaceOrder.js'
 import { OrdersList } from './Order.js'
+import { VarietyOptions } from './Varieties.js'
 
 const container = document.querySelector('#container')
 
@@ -12,11 +13,12 @@ const render = async () => {
     // const sizeOptionsHTML = await SizeOptions()
     // const ordersListHTML = await OrdersList()
 
-    const [metalOptionsHTML, styleOptionsHTML, sizeOptionsHTML, ordersListHTML] = await Promise.all([
+    const [metalOptionsHTML, styleOptionsHTML, sizeOptionsHTML, ordersListHTML, varietyOptionsHTML] = await Promise.all([
         MetalOptions(),
         StyleOptions(),
         SizeOptions(),
         OrdersList(),
+        VarietyOptions()
     ])
 
     const buttonHTML = saveOrder()
@@ -36,6 +38,9 @@ const render = async () => {
                 <h2>Styles</h2>
                 ${styleOptionsHTML}
             </section>
+        </article>
+        <article class="variety">
+            ${varietyOptionsHTML}
         </article>
         <article class="order">
             ${buttonHTML}

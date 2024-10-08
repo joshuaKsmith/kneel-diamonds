@@ -1,10 +1,8 @@
 import { saveOrderSubmission } from "./TransientState.js"
-//import { render } from "./main.js"
 
 const handleOrderSubmissionClick = (clickEvent) => {
     if (clickEvent.target.id === "saveOrder") {
         saveOrderSubmission()
-        //render()
     }
 }
 export const saveOrder = () => {

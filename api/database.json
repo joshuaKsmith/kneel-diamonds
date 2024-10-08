@@ -75,31 +75,88 @@
       "metalId": 1,
       "styleId": 1,
       "sizeId": 1,
-      "id": 1
+      "id": 1,
+      "varietyId": 1
     },
     {
       "metalId": 3,
       "styleId": 3,
       "sizeId": 5,
-      "id": 2
+      "id": 2,
+      "varietyId": 1
     },
     {
       "metalId": 1,
       "styleId": 2,
       "sizeId": 1,
-      "id": 3
+      "id": 3,
+      "varietyId": 2
     },
     {
       "metalId": 3,
-      "styleId": 1,
+      "styleId": 3,
       "sizeId": 5,
+      "varietyId": 3,
       "id": 4
     },
     {
-      "metalId": 1,
-      "styleId": 1,
-      "sizeId": 2,
+      "metalId": 5,
+      "styleId": 2,
+      "sizeId": 5,
+      "varietyId": 3,
       "id": 5
+    },
+    {
+      "metalId": 5,
+      "styleId": 3,
+      "sizeId": 5,
+      "varietyId": 3,
+      "id": 6
+    },
+    {
+      "metalId": 5,
+      "styleId": 3,
+      "sizeId": 5,
+      "varietyId": 1,
+      "id": 7
+    },
+    {
+      "metalId": 1,
+      "styleId": 2,
+      "sizeId": 2,
+      "varietyId": 3,
+      "id": 8
+    },
+    {
+      "metalId": 5,
+      "styleId": 3,
+      "sizeId": 5,
+      "varietyId": 3,
+      "id": 9
+    },
+    {
+      "metalId": 3,
+      "styleId": 3,
+      "sizeId": 5,
+      "varietyId": 3,
+      "id": 10
+    }
+  ],
+  "varieties": [
+    {
+      "id": 1,
+      "variety": "ring",
+      "modifier": 1
+    },
+    {
+      "id": 2,
+      "variety": "earring",
+      "modifier": 2
+    },
+    {
+      "id": 3,
+      "variety": "necklace",
+      "modifier": 4
     }
   ]
 }

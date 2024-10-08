@@ -13,5 +13,6 @@ export const StyleOptions = async () => {
     document.addEventListener("change", handleStyleChoice)
 
     return styles.map((style) => {
-        return `<div><input type='radio' name='style' value='${style.id}' /> ${style.style}</div>`}).join("")
+        return `<div><input type='radio' name='style' value='${style.id}' /> ${style.style}</div>`
+    }).join("")
 }

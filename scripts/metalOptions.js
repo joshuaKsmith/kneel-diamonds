@@ -13,5 +13,6 @@ export const MetalOptions = async () => {
     document.addEventListener("change", handleMetalChoice)
 
     return metals.map((metal) => {
-        return `<div><input type='radio' name='metal' value='${metal.id}' /> ${metal.metal}</div>`}).join("")
+        return `<div><input type='radio' name='metal' value='${metal.id}' /> ${metal.metal}</div>`
+    }).join("")
 }
